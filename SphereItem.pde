@@ -42,12 +42,21 @@ class SphereItem {
 
   public void init() {  
     //Xe defines an array of possibe spereItem colors
+    /*
     color[] colors = {
       color(162, 209, 215), // light blue bg circle 4
       color(235, 34, 40), // scarlet circle 0
       color(27, 86, 162), // dark blue circle 1
       color(235, 0, 139), // purple circle 2
       color(79, 116, 186) // medium blue circle 3
+      */
+      //add transparency to colors
+      color[] colors = {
+      color(162, 209, 215, 175), // light blue bg circle 4
+      color(235, 34, 40, 175), // scarlet circle 0
+      color(27, 86, 162, 175), // dark blue circle 1
+      color(235, 0, 139, 175), // purple circle 2
+      color(79, 116, 186, 175) // medium blue circle 3
     };
     //Set the fill colour //Xe by assigning a random color from the color array to it
     clr = colors [ (int) random(0, colors.length) ];

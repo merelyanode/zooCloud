@@ -1,5 +1,5 @@
 /* Xe annotated
- *NCDLogo.pde
+ *zooCloud.pde
  * -----------
  * Sets up the backdrop (with text and background gradient).
  * Sets up the basic size and location of the sphere in 3D.
@@ -17,7 +17,8 @@ import processing.opengl.*;
 //defines some salient properties of the visualization
 int cell = 10; // diameter of particles
 float radius = 140; // radius of large sphere
-int num = 1000; // number of spheres
+//int num = 1000; // number of spheres
+int num = 50;
 
 color bg = color(212, 237, 244); // default background color
 //XL ¿how does this array work?

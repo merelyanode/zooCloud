@@ -128,7 +128,7 @@ class ControlPoint {
     pushStyle();
     pushMatrix();
     translate( loc.x, loc.y );
-    fill(0);
+    fill(255,255,0);
     ellipse(0,0, 5, 5);
     popMatrix();
     popStyle();
