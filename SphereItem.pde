@@ -66,10 +66,14 @@ class SphereItem {
     //Get the radius from the parent Sphere
     float r = parentSphere.radius;
     //Convert spherical coordinates into Cartesian coordinates
+    /*
     float x = cos(theta) * sin(phi) * r;
     float y = sin(theta) * sin(phi) * r;
     float z = cos(phi) * r;
-    
+    */
+    float x = cos(theta) * sin(phi) * r/4;
+    float y = sin(theta) * sin(phi) * r/3;
+    float z = cos(phi) * r/6;
     //Mark our 3d space
     pushMatrix();
     //Move to the position of this item

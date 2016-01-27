@@ -58,8 +58,9 @@ class Sphere {
     si.theta = TWO_PI * u;
     si.phi = acos(2 * v - 1);
     // set size
-    si.itemSize = random(1, diam);
-    //XL si.itemSize = 3;
+    //si.itemSize = random(1, diam);
+    //XL increase the maximum size of the particles
+    si.itemSize = random(1, 30);
     //Add the new sphere item to the end of our ArrayList
     items.add(items.size(), si);
     si.init();
