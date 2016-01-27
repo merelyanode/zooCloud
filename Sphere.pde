@@ -9,7 +9,7 @@
  * Jer's code released under CC-GNU GPL license v2.0 or later,
  * The license is viewable here: http://creativecommons.org/licenses/GPL/2.0/
  *
- * Adapted by Gauden Galea, 12 September 2010
+ * Adapted from Gauden Galea, 12 September 2010
  * Gauden's code also released under CC-GNU GPL license v2.0 or later
  */
 
@@ -22,7 +22,7 @@ class Sphere {
   //Xe These are the SphereItems. They are defined as a part of the "Sphere" class
   ArrayList items = new ArrayList(); //List of all of the items contained in the Sphere
   //Xe The "icon" is defined as a part of the "Sphere" class
-  PImage icon; // holds the icon of the action plan logo
+  //PImage icon; // holds the icon of the action plan logo
  
    //Xe The "mode" (circle v. icon) is delcared here and may be altered here by exchanging the value of "CIRCLE" and "ICON"
   int CIRCLE = 0;
