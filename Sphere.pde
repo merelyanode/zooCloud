@@ -9,8 +9,8 @@
  * Jer's code released under CC-GNU GPL license v2.0 or later,
  * The license is viewable here: http://creativecommons.org/licenses/GPL/2.0/
  *
- * Adaptations here are by Gauden Galea, 12 September 2010
- * Adapted code here is also released under CC-GNU GPL license v2.0 or later
+ * Adapted by Gauden Galea, 12 September 2010
+ * Gauden's code also released under CC-GNU GPL license v2.0 or later
  */
 
 
