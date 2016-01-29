@@ -9,6 +9,8 @@
  * Code by Gauden Galea, 12 September 2010
  * Released under CC-GNU GPL license v2.0 or later
  * The license is viewable here: http://creativecommons.org/licenses/GPL/2.0/
+ * Adapted from Gauden Galea's NCD Logo
+ * Gauden's code released under CC-GNU GPL license v2.0 or later
  */
 
 
