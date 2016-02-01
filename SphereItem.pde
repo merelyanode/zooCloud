@@ -71,9 +71,9 @@ class SphereItem {
     float y = sin(theta) * sin(phi) * r;
     float z = cos(phi) * r;
     
-    //float x = cos(theta) * sin(phi) * r/3;
-    //float y = sin(theta) * sin(phi) * r/3;
-    //float z = cos(phi) * r/2;
+    //float x = cos(theta) * sin(phi) * r/1.8;
+    //float y = sin(theta) * sin(phi) * r/10;
+    //float z = cos(phi) * r/8;
      /*
     println("theta =" + theta);
     println("phi =" + phi);

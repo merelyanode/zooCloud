@@ -55,15 +55,20 @@ class Sphere {
     //Xe Create two variables, u and v, to use for defining the spherical coordinates (functions of theta and phi)  of each sphereItem
     float u = random(0,1);
     float v = random(0,1);
+    //XL I'm adding new variables below
+    //float d = random(750,1000);
+    //float l = random(.1,100);
     //float u = .5;
     //float v = .05;
     si.theta = TWO_PI * u;
+    //si.theta = PI/d * u; //Xi
     //si.theta = PI/2 * u; //Xi
+    //si.phi = acos(l * v - 1); //Xi
     si.phi = acos(2 * v - 1);
     // set size
-    //si.itemSize = random(1, diam);
+    si.itemSize = random(1, diam);
     //XL increase the maximum size of the particles
-    si.itemSize = random(1, 10);
+    //si.itemSize = random(1, 10);
     //si.itemSize = 15;
     //Add the new sphere item to the end of our ArrayList
     items.add(items.size(), si);
@@ -101,8 +106,8 @@ class Sphere {
   public void renderMesh() {
     // Draw the inner circles of longitude 
     //Xe the Longitude Mesh is defined and iterated here
-    //int steps = 10; XL change number of long. lines drawn -->
-    int steps = 3;
+    int steps = 10; //XL change number of long. lines drawn -->
+    //int steps = 0;
     pushStyle();
     pushMatrix();
     noFill();

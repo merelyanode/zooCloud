@@ -20,7 +20,7 @@ import processing.opengl.*;
 int cell = 10; // diameter of particles
 float radius = 140; // radius of large sphere
 //int num = 1000; // number of spheres
-int num = 50;
+int num = 100;
 
 color bg = color(212, 237, 244); // default background color
 //XL ¿how does this array work?
