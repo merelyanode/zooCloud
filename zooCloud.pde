@@ -11,6 +11,8 @@
  * Code by Gauden Galea, 12 September 2010
  * Released under CC-GNU GPL license v2.0 or later
  * The license is viewable here: http://creativecommons.org/licenses/GPL/2.0/
+ * Adapted from Gauden Galea's NCD Logo
+ * Gauden's code released under CC-GNU GPL license v2.0 or later
  */
 
 import processing.opengl.*;
@@ -70,8 +72,8 @@ void draw() {
   background(bg);
   //Xe defines the image file, position and display size
   image( backdrop[backdropIndex], 0, 0, backdrop[backdropIndex].width, backdrop[backdropIndex].height);
-   //Xe below is a an extra circle I added to the drawing to see what color it would take. It's is cohsen radomly from the array, like the spereItem circles
-   ellipse(20,30,100,100);
+   //Xe below is a an extra circle I added to the drawing to see what color it would take. It's is chosen radomly from the array, like the spereItem circles
+   //ellipse(20,30,100,100);
    //Xe ¿ What does the update method do exactly?
   cp.update();
 // Uncomment the next line to visualise the control point as a black circle

@@ -9,8 +9,8 @@
  * Jer's code released under CC-GNU GPL license v2.0 or later,
  * The license is viewable here: http://creativecommons.org/licenses/GPL/2.0/
  *
- * Adaptations here are by Gauden Galea, 12 September 2010
- * Adapted code here is also released under CC-GNU GPL license v2.0 or later
+ * Adapted from Gauden Galea's NCD Logo
+ * Gauden's code released under CC-GNU GPL license v2.0 or later
  */
 
 
@@ -66,14 +66,24 @@ class SphereItem {
     //Get the radius from the parent Sphere
     float r = parentSphere.radius;
     //Convert spherical coordinates into Cartesian coordinates
-    /*
+
     float x = cos(theta) * sin(phi) * r;
     float y = sin(theta) * sin(phi) * r;
     float z = cos(phi) * r;
+    
+    //float x = cos(theta) * sin(phi) * r/3;
+    //float y = sin(theta) * sin(phi) * r/3;
+    //float z = cos(phi) * r/2;
+     /*
+    println("theta =" + theta);
+    println("phi =" + phi);
+    //println(3 * -1);
     */
-    float x = cos(theta) * sin(phi) * r/4;
-    float y = sin(theta) * sin(phi) * r/3;
-    float z = cos(phi) * r/6;
+    //How big is the radius? --> r = 140.0
+    //println("x = " + x);
+    //println("y= " + y);
+    //println("z= " + z);
+          
     //Mark our 3d space
     pushMatrix();
     //Move to the position of this item
@@ -85,7 +95,9 @@ class SphereItem {
       fill( clr ); 
       noStroke();
       // Draw a circle
-      ellipse(0,0,itemSize,itemSize);
+      //ellipse(0,0,itemSize,itemSize);
+      // Draw a sphere
+      sphere(itemSize);
     } 
     else {
       // Put up a bitmap representation of the logo

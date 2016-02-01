@@ -22,7 +22,7 @@ class Sphere {
   //Xe These are the SphereItems. They are defined as a part of the "Sphere" class
   ArrayList items = new ArrayList(); //List of all of the items contained in the Sphere
   //Xe The "icon" is defined as a part of the "Sphere" class
-  //PImage icon; // holds the icon of the action plan logo
+  PImage icon; // holds the icon of the action plan logo
  
    //Xe The "mode" (circle v. icon) is delcared here and may be altered here by exchanging the value of "CIRCLE" and "ICON"
   int CIRCLE = 0;
@@ -55,12 +55,16 @@ class Sphere {
     //Xe Create two variables, u and v, to use for defining the spherical coordinates (functions of theta and phi)  of each sphereItem
     float u = random(0,1);
     float v = random(0,1);
+    //float u = .5;
+    //float v = .05;
     si.theta = TWO_PI * u;
+    //si.theta = PI/2 * u; //Xi
     si.phi = acos(2 * v - 1);
     // set size
     //si.itemSize = random(1, diam);
     //XL increase the maximum size of the particles
-    si.itemSize = random(1, 30);
+    si.itemSize = random(1, 10);
+    //si.itemSize = 15;
     //Add the new sphere item to the end of our ArrayList
     items.add(items.size(), si);
     si.init();
@@ -97,7 +101,8 @@ class Sphere {
   public void renderMesh() {
     // Draw the inner circles of longitude 
     //Xe the Longitude Mesh is defined and iterated here
-    int steps = 10;
+    //int steps = 10; XL change number of long. lines drawn -->
+    int steps = 3;
     pushStyle();
     pushMatrix();
     noFill();

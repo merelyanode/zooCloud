@@ -81,7 +81,7 @@ class ControlPoint {
       // if the control point gets within 20 pixels of the mouse, 
       // stop tracking the mouse till it moves again.
       // Note: the 20 pixels is arbitrary, determined by trial 
-      // and error to reduce sudden changes in velocity when contro point reaches mouse
+      // and error to reduce sudden changes in velocity when control point reaches mouse
       if (loc.x - target.x < 20 && loc.y - target.y < 20) {
         target = new PVector( -1, -1);
       }
