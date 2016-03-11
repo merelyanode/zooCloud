@@ -59,7 +59,7 @@ class SphereItem {
       color(79, 116, 186, 175) // medium blue circle 3
     };
     //Set the fill colour //Xe by assigning a random color from the color array to it
-    clr = colors [ (int) random(0, colors.length) ];
+    //clr = colors [ (int) random(0, colors.length) ];
   }
 //#
   public void render(int m) {

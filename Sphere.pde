@@ -67,6 +67,7 @@ class Sphere {
     si.phi = acos(2 * v - 1);
     // set size
     si.itemSize = random(1, diam);
+    si.clr = color(79, 116, 186, 175);
     //XL increase the maximum size of the particles
     //si.itemSize = random(1, 10);
     //si.itemSize = 15;
@@ -74,7 +75,34 @@ class Sphere {
     items.add(items.size(), si);
     si.init();
   }
-
+ //adding a second SphereItem function
+ public void addSphereItem2(int diam) {
+    //Make a new SphereItem
+    SphereItem si2 = new SphereItem();
+    //Set the parent sphere
+    si2.parentSphere = this;
+    //Set random values for the spherical coordinates...//Xe ...of each SphereItem. All these values designate surface coordinates ONLY
+    // using the method on http://mathworld.wolfram.com/SpherePointPicking.html
+    //Xe Create two variables, u and v, to use for defining the spherical coordinates (functions of theta and phi)  of each sphereItem
+    float u2 = random(0, 1);
+    float v2 = random(0, 1);
+    si2.theta = TWO_PI * u2;
+    //si.theta = PI/d * u; //Xi
+    //si.theta = PI/2 * u; //Xi
+    //si.phi = acos(l * v - 1); //Xi
+    si2.phi = acos(2 * v2 - 1);
+    // set size
+    si2.itemSize = random(1, diam);
+    si2.clr=color(235, 0, 139, 175);  //purple
+    //XL increase the maximum size of the particles
+    //si.itemSize = random(1, 10);
+    //si.itemSize = 15;
+    //Add the new sphere item to the end of our ArrayList
+    items.add(items.size(), si2);
+    si2.init();
+  }
+ 
+ 
   public void render(float x, float y) {
     //Mark our position in 3d space
    

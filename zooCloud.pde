@@ -62,6 +62,7 @@ void setup() {
   //Xe create a number of sphereItems that is equal to the  value of the var, "num".
   for (int i = 0; i < num; i++) {
     mySphere.addSphereItem( cell );
+    mySphere.addSphereItem2( cell );
   }
   
   //Xe creates mouse click point that controls the dynamics of the circle array motion
